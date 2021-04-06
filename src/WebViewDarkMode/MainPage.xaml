@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="WebViewDarkMode.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid ColumnSpacing="0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Frame
+            Grid.Row="0"
+            Padding="24"
+            BackgroundColor="#2196F3">
+            <Label
+                FontSize="36"
+                HorizontalTextAlignment="Center"
+                Text="XF WebView Darkmode"
+                TextColor="White" />
+        </Frame>
+
+        <WebView x:Name="TestWebView" Grid.Row="1" />
+
+    </Grid>
+
+</ContentPage>
